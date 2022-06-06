@@ -29,6 +29,10 @@ def raise_err():
     """Route that throws error; just for testing."""
 
     raise Exception("Oh no! A contrived error!")
+  
+@app.route("/woot")
+def woot():
+  return  "WOOOOOOOOOT"
 
 
 if __name__ == "__main__":
